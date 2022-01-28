@@ -1,0 +1,158 @@
+
+EXAMPLE 1: ./a.out 3 3 7
+ Producer 2      produced 9
+ Consumer 0      consumed 9
+ Producer 2      produced 280
+ Producer 0      produced 10
+ Consumer 1      consumed 280
+ Consumer 0      consumed 10
+ Producer 1      produced 96
+ Consumer 2      consumed 96
+ Producer 2      produced 122
+ Consumer 1      consumed 122
+ Producer 0      produced 209
+ Consumer 1      consumed 209
+ Producer 1      produced 343
+ max items produced flag set
+ Consumer 0      consumed 343
+ exit flag set
+ Producer 2      Exiting........
+ Consumer 2      Exiting........
+ Producer 0      Exiting........
+ Consumer 0      Exiting........
+ Producer 1      Exiting........
+ Consumer 1      Exiting........
+ All Producer threads exited
+ All Consumer threads exited
+ ---------------------------------------------
+ Buffer Contents
+ buffer[0]: 0
+ buffer[1]: 0
+ buffer[2]: 0
+ buffer[3]: 0
+ buffer[4]: 0
+ End of program
+
+EXAMPLE 2: ./a.out 5 3 7
+ Producer 1      produced 9
+ Producer 2      produced 105
+ Consumer 0      consumed 9
+ Producer 3      produced 461
+ Producer 0      produced 10
+ Consumer 1      consumed 105
+ Producer 4      produced 96
+ Consumer 2      consumed 461
+ Producer 4      produced 150
+ Producer 3      produced 343
+ max items produced flag set
+ Producer 0      Exiting........
+ Producer 2      Exiting........
+ Consumer 1      consumed 10
+ Producer 1      Exiting........
+ Consumer 0      consumed 96
+ Consumer 1      consumed 150
+ Producer 4      Exiting........
+ Consumer 2      consumed 343
+ exit flag set
+ Consumer 1      Exiting........
+ Consumer 0      Exiting........
+ Consumer 2      Exiting........
+ Producer 3      Exiting........
+ All Producer threads exited
+ All Consumer threads exited
+ ---------------------------------------------
+ Buffer Contents
+ buffer[0]: 0
+ buffer[1]: 0
+ buffer[2]: 0
+ buffer[3]: 0
+ buffer[4]: 0
+ End of program
+
+EXAMPLE 3: ./a.out 3 5 7
+ Producer 1      produced 9
+ Producer 2      produced 105
+ Consumer 2      consumed 9
+ Consumer 0      consumed 105
+ Producer 0      produced 10
+ Consumer 1      consumed 10
+ Producer 2      produced 83
+ Consumer 3      consumed 83
+ Producer 1      produced 209
+ Consumer 0      consumed 209
+ Producer 0      produced 449
+ Producer 2      produced 150
+ max items produced flag set
+ Producer 0      Exiting........
+ Consumer 4      consumed 449
+ Consumer 1      consumed 150
+ exit flag set
+ Consumer 2      Exiting........
+ Producer 1      Exiting........
+ Consumer 4      Exiting........
+ Consumer 3      Exiting........
+ Consumer 0      Exiting........
+ Producer 2      Exiting........
+ All Producer threads exited
+ Consumer 1      Exiting........
+ All Consumer threads exited
+ ---------------------------------------------
+ Buffer Contents
+ buffer[0]: 0
+ buffer[1]: 0
+ buffer[2]: 0
+ buffer[3]: 0
+ buffer[4]: 0
+ End of program
+
+EXAMPLE 4: ./a.out 9 12 7
+ Producer 1      produced 9
+ Producer 2      produced 105
+ Producer 5      produced 280
+ Producer 6      produced 390
+ Producer 3      produced 461
+ Cannot add item to buffer, buffer is full
+ Cannot add item to buffer, buffer is full
+ Consumer 2      consumed 9
+ Producer 4      produced 96
+ Consumer 0      consumed 105
+ Producer 5      produced 55
+ max items produced flag set
+ Consumer 1      consumed 280
+ Producer 7      Exiting........
+ Consumer 1      consumed 390
+ Producer 1      Exiting........
+ Consumer 7      consumed 461
+ Producer 2      Exiting........
+ Consumer 11     consumed 96
+ Producer 8      Exiting........
+ Consumer 0      consumed 55
+ exit flag set
+ Producer 0      Exiting........
+ Consumer 2      Exiting........
+ Producer 5      Exiting........
+ Consumer 8      Exiting........
+ Producer 3      Exiting........
+ Consumer 0      Exiting........
+ Consumer 6      Exiting........
+ Producer 4      Exiting........
+ Consumer 5      Exiting........
+ Consumer 9      Exiting........
+ Consumer 1      Exiting........
+ Consumer 4      Exiting........
+ Consumer 7      Exiting........
+ Consumer 3      Exiting........
+ Consumer 10     Exiting........
+ Producer 6      Exiting........
+ Consumer 11     Exiting........
+ All Producer threads exited
+ All Consumer threads exited
+ ---------------------------------------------
+ Buffer Contents
+ buffer[0]: 0
+ buffer[1]: 0
+ buffer[2]: 0
+ buffer[3]: 0
+ buffer[4]: 0
+ End of program
+
